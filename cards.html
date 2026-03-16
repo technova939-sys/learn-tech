@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1000px;
+        background: #ffb1b1;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .card1 {
+        background: #9c8abb;
+        grid-area: span 2;
+        border-radius: 20px;
+        padding: 20px;
+      }
+      .card2 {
+        grid-column: span 2;
+        border-radius: 20px;
+        padding: 20px;
+        background: #ea73a2;
+      }
+      .card3 {
+        border-radius: 20px;
+        padding: 20px;
+        background: #c7df91;
+      }
+      .card4 {
+        border-radius: 20px;
+        padding: 20px;
+        background: #f7e373;
+      }
+
+      .card5 {
+        grid-column: span 2;
+        border-radius: 20px;
+        padding: 20px;
+        background: #ef9d76;
+      }
+      .card6 {
+        border-radius: 20px;
+        padding: 20px;
+        background: #b8cdd8;
+      }
+      .content-card1 {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .content-card1 img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 20px;
+      }
+      .content-card2 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .content-card2 .right img {
+        max-width: 200px;
+        height: auto;
+        transform: rotate(10deg);
+        border-radius: 20px;
+      }
+      .content-card3 {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .content-card3 img {
+        max-width: 200px;
+        height: auto;
+        border-bottom-right-radius: 75px;
+        border-top-left-radius: 75px;
+        border-top-right-radius: 75px;
+        margin: auto;
+      }
+      .img2 {
+        display: flex;
+      }
+
+      .content-card4 {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 5px;
+      }
+      .content-card4 img {
+        max-width: 200px;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+
+      .content-card5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 5px;
+      }
+
+      .content-card5 .right img {
+        max-width: 200px;
+        height: auto;
+        border-radius: 20px;
+      }
+
+      .content-card6 {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .content-card6 img {
+        max-width: 200px;
+        height: auto;
+        border-radius: 20px;
+        margin: auto;
+      }
+
+      @media (max-width:900px){
+
+.container{
+grid-template-columns: repeat(2,1fr);
+}
+
+.card1{
+grid-area: auto;
+background: beige;
+}
+
+.card2{
+grid-column: span 2;
+}
+
+.card5{
+grid-column: span 2;
+}
+.content-card1 {
+       flex-direction: row; 
+}
+.content-card1 .img img{
+  width: 300px;
+}
+}
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card1">
+        <div class="content-card1">
+          <h1>Master HTML Basics</h1>
+          <div class="img">
+            <img
+              src="https://img.freepik.com/free-vector/developer-writing-code-website-laptop-computer-designer-flat-vector-illustration-coding-programming_74855-13055.jpg?t=st=1773233882~exp=1773237482~hmac=b44143806ecfc72bf69b6376330bef8e51c4aff1fbfa4caf42c6167471d589f5&w=1480"
+              alt=""
+            />
+          </div>
+          <p>
+            Learn the structure of every website. Understand tags, elements,
+            forms, tables and build the foundation of web development.
+          </p>
+        </div>
+      </div>
+      <div class="card2">
+        <div class="content-card2">
+          <div class="left">
+            <h1>Modern CSS Design</h1>
+            <p>
+              Design beautiful websites using CSS. Learn Flexbox, Grid,
+              animations and make fully responsive layouts for all devices.
+            </p>
+          </div>
+          <div class="right">
+            <img
+              src="https://img.freepik.com/free-vector/colorful-illustration-female-programmer-doing-her-job_23-2148280705.jpg?t=st=1773235028~exp=1773238628~hmac=cf6a54736a5e683839d9b65226e1cbe85544ee0ec5b88dd6bcc20e1873bb05de&w=2000"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card3">
+        <div class="content-card3">
+          <div class="img2">
+            <img
+              src="https://freefrontend.com/img/2025/2025-07-24-untitled_hu233910137221793193.webp"
+              alt=""
+            />
+          </div>
+          <h1>Skills</h1>
+          <p>Add interactivity to your website with JavaScript. Learn DOM manipulation, events, functions and build dynamic web apps.</p>
+        </div>
+      </div>
+      <div class="card4">
+        <div class="content-card4">
+          <div class="">
+            <img
+              src="https://freefrontend.com/img/2025/2025-07-24-untitled_hu233910137221793193.webp"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1>Placement Preparation</h1>
+            <p>
+              Prepare for tech jobs with interview questions and coding
+              practice.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card5">
+        <div class="content-card5">
+          <div class="left">
+            <h1>React Development</h1>
+            <p>
+              Build modern and fast web applications using React. Learn components, hooks, state management and real-world projects.
+            </p>
+          </div>
+          <div class="right">
+            <img
+              src="https://i.pinimg.com/736x/f5/41/b0/f541b021ce69dc32203ddf3c52bfa678.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card6">
+        <div class="content-card6">
+          <div class="img2">
+            <img
+              src="https://freefrontend.com/img/2025/2025-11-14-3d-sign-up-button-with-spline-and-gsap_hu6484398543256105392.webp"
+              alt=""
+            />
+          </div>
+          <h1>SignUp</h1>
+          <p>Add interactivity to your website just click SignUp.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
